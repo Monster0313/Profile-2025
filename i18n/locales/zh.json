@@ -1,0 +1,60 @@
+{
+  "current": "當地時間",
+  "tokyo": "東京",
+  "seoul": "首爾",
+  "london": "倫敦",
+  "paris": "巴黎",
+  "sydney": "雪梨",
+  "selectTimezone": "選擇時區",
+  "selectFont": "選擇字體",
+  "noData": "沒有資料",
+  "airQuality": "空氣品質",
+  "about": {
+    "title": "關於我",
+    "name": "邱旻鋒 / 小怪",
+    "intro": [
+      "你好，我是一名來自台灣的前端工程師，也是一名接案攝影師，",
+      "喜歡將事物透過自己的雙手記錄下來。",
+      "主要使用 Vue、Nuxt、Tailwind CSS 進行開發，",
+      "可以參考網站內的內容來更了解我所做的事。"
+    ]
+  },
+  "interest": {
+    "title": "興趣",
+    "photography": "攝影",
+    "photographyDetail": ["人像攝影", "風景攝影", "獸聚活動紀錄"],
+    "travel": "旅行",
+    "travelDetail": ["自由行", "輕裝旅行", "感受當地文化"],
+    "gaming": "遊戲",
+    "gamingDetail": ["楓之谷", "英雄聯盟", "多人合作遊戲"]
+  },
+  "skill": {
+    "title": "技能"
+  },
+  "work": {
+    "title": "作品",
+    "detail": "作品頁面維護中",
+    "chia": {
+      "title": "Chia - 產品前端開發"
+    },
+    "cms": {
+      "title": "CMS - 活動網頁開發"
+    },
+    "aqi": {
+      "title": "AQI - 串接開放資料API"
+    },
+    "injustice": {
+      "title": "致．不義時光 - 畢業專題製作"
+    }
+  },
+  "article": {
+    "title": "文章",
+    "detail": "前往閱讀"
+  },
+  "gallery": {
+    "title": "⚠️ 注意事項 ⚠️"
+  },
+  "test": {
+    "counter": "計數器測試"
+  }
+}

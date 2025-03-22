@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-primary-50: #2c221c;
+  --color-primary-100: #473930;
+  --color-primary-200: #59473a;
+  --color-primary-300: #59473a;
+  --color-primary-400: #816c4d;
+  --color-primary-500: #97835b;
+  --color-primary-600: #a69569;
+  --color-primary-700: #baaf8a;
+  --color-primary-800: #d3ceb5;
+  --color-primary-900: #e8e6d9;
+  --color-primary-950: #f6f5f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.dark-mode {
+    --color-primary-50: #f6f5f0;
+    --color-primary-100: #e8e6d9;
+    --color-primary-200: #d3ceb5;
+    --color-primary-300: #baaf8a;
+    --color-primary-400: #a69569;
+    --color-primary-500: #97835b;
+    --color-primary-600: #816c4d;
+    --color-primary-700: #59473a;
+    --color-primary-800: #59473a;
+    --color-primary-900: #473930;
+    --color-primary-950: #2c221c;
+  }
+}
+
+@theme {
+  --font-bss: "Big Shoulders Stencil", sans-serif;
+  --font-sg: "Space Grotesk", sans-serif;
+  --font-bsi: "Big Shoulders Inline", sans-serif;
+  --color-primary-50: var(--color-primary-50);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-200: var(--color-primary-200);
+  --color-primary-300: var(--color-primary-300);
+  --color-primary-400: var(--color-primary-400);
+  --color-primary-500: var(--color-primary-500);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-800: var(--color-primary-800);
+  --color-primary-900: var(--color-primary-900);
+  --color-primary-950: var(--color-primary-950);
+}

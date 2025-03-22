@@ -1,0 +1,72 @@
+{
+  "current": "Local Time",
+  "tokyo": "Tokyo",
+  "seoul": "Seoul",
+  "london": "London",
+  "paris": "Paris",
+  "sydney": "Sydney",
+  "selectTimezone": "Select Timezone",
+  "selectFont": "Select Font",
+  "noData": "No Data",
+  "airQuality": "Air Quality",
+  "about": {
+    "title": "About",
+    "name": "Minfeng Qiu",
+    "intro": [
+      "Hi, I'm a front-end developer from Taiwan and a freelance photographer.",
+      "Enjoy capturing moments through my own hands.",
+      "I primarily develop using Vue, Nuxt, and Tailwind CSS.",
+      "Feel free to explore this website to learn more about my work."
+    ]
+  },
+  "interest": {
+    "title": "Interests",
+    "photography": "Photography",
+    "photographyDetail": [
+      "Portrait Photography",
+      "Landscape Photography",
+      "Furry Con Photography"
+    ],
+    "travel": "Travel",
+    "travelDetail": [
+      "Self-Guided Trips",
+      "Lightweight Travel",
+      "Experiencing Local Culture"
+    ],
+    "gaming": "Gaming",
+    "gamingDetail": [
+      "MapleStory",
+      "League of Legends",
+      "Co-op Multiplayer Games"
+    ]
+  },
+  "skill": {
+    "title": "Skills"
+  },
+  "work": {
+    "title": "Works",
+    "detail": "Work page is under maintenance",
+    "chia": {
+      "title": "Chia - 產品前端開發"
+    },
+    "cms": {
+      "title": "CMS - 活動網頁開發"
+    },
+    "aqi": {
+      "title": "AQI - 串接開放資料API"
+    },
+    "injustice": {
+      "title": "致．不義時光 - 畢業專題製作"
+    }
+  },
+  "article": {
+    "title": "Articles",
+    "detail": "Read More"
+  },
+  "gallery": {
+    "title": "⚠️ Disclamer ⚠️"
+  },
+  "test": {
+    "counter": "Counter Test"
+  }
+}
