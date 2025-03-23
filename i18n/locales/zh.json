@@ -33,7 +33,8 @@
   },
   "work": {
     "title": "作品",
-    "detail": "作品頁面維護中",
+    "detail": "前往相關連結",
+    "closed": "詳細頁面開發中",
     "chia": {
       "title": "Chia - 產品前端開發"
     },

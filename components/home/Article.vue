@@ -5,7 +5,7 @@
         {{ t("article.title") }}
       </h1>
     </div>
-    <div class="max-w-[1080px] grid grid-cols-2 gap-8">
+    <div class="max-w-[1080px] grid grid-cols-1 md:grid-cols-2 gap-8">
       <div v-for="(work, index) in works" :key="index" class="">
         <div class="relative">
           <NuxtImg

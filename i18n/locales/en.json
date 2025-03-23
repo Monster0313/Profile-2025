@@ -45,7 +45,8 @@
   },
   "work": {
     "title": "Works",
-    "detail": "Work page is under maintenance",
+    "detail": "View Link",
+    "closed": "Coming Soon",
     "chia": {
       "title": "Chia - 產品前端開發"
     },

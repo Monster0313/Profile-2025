@@ -12,7 +12,9 @@
         <div class="flex justify-center items-center gap-1 mb-5">
           <Icon v-for="i in 5" name="ion:paw" size="28" />
         </div>
-        <div class="flex justify-center items-center gap-5">
+        <div
+          class="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-5"
+        >
           <div
             v-for="top in skills.top"
             :key="top.name"
@@ -27,7 +29,9 @@
         <div class="flex justify-center items-center gap-1 mb-5">
           <Icon v-for="i in 4" name="ion:paw" size="28" />
         </div>
-        <div class="flex justify-center items-center gap-5">
+        <div
+          class="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-5"
+        >
           <div
             v-for="top in skills.middle"
             :key="top.name"
@@ -42,7 +46,9 @@
         <div class="flex justify-center items-center gap-1 mb-5">
           <Icon v-for="i in 3" name="ion:paw" size="28" />
         </div>
-        <div class="flex justify-center items-center gap-5">
+        <div
+          class="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-5"
+        >
           <div
             v-for="top in skills.bottom"
             :key="top.name"

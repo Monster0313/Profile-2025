@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-[100vh] bg-primary-900 p-20">
+  <div class="relative min-h-[100vh] bg-primary-900 p-5 md:p-20">
     <Navbar />
     <NuxtPage />
     <Footer />

@@ -5,7 +5,7 @@
         {{ t("work.title") }}
       </h1>
     </div>
-    <div class="max-w-[1080px] grid grid-cols-2 gap-8">
+    <div class="max-w-[1080px] grid grid-cols-1 md:grid-cols-2 gap-8">
       <div v-for="(work, index) in works" :key="index" class="">
         <div class="relative">
           <img
@@ -15,13 +15,18 @@
           <div
             class="absolute group rounded-t-2xl w-full h-full top-0 left-0 bg-primary-800/80 flex justify-center items-center opacity-20 hover:opacity-100 transition-opacity duration-300 text-2xl font-semibold text-primary-50"
           >
-            <span class="hidden group-hover:block cursor-pointer">
-              {{ t("work.detail") }}
-            </span>
+            <NuxtLink
+              :to="work.link"
+              class="hidden group-hover:block cursor-pointer"
+            >
+              {{ work.isOpen ? t("work.detail") : t("work.closed") }}
+            </NuxtLink>
           </div>
         </div>
         <div class="w-full bg-primary-800 p-4 rounded-b-2xl">
-          <h2 class="text-primary-100 text-xl font-semibold">
+          <h2
+            class="text-primary-100 text-xl font-semibold max-w-[400px] truncate"
+          >
             {{ work.title }}
           </h2>
         </div>
@@ -42,22 +47,26 @@ const works = ref([
   {
     title: "Chia - Client & Admin",
     image: Chia,
-    link: "/work/chia",
+    link: "https://reurl.cc/9DZQy8",
+    isOpen: true,
   },
   {
     title: "Promo Website - CMS System",
     image: Cms,
-    link: "/work/cms",
+    link: "https://reurl.cc/NYXEnm",
+    isOpen: true,
   },
   {
     title: "AQI Map - Open Data API",
     image: Aqi,
-    link: "/work/aqi",
+    link: "https://github.com/Monster0313/Taiwan.AirQualityIndicator.Map",
+    isOpen: true,
   },
   {
     title: "Injustice - Website",
     image: Injustice,
-    link: "/work/injustice",
+    link: "#",
+    isOpen: false,
   },
 ]);
 </script>

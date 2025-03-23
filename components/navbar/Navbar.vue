@@ -13,8 +13,7 @@
           :to="link.to"
           class="text-primary-50 text-lg p-3 hover:text-primary-200 hover:bg-primary-300/20"
           :class="{
-            'border-b-2 border-primary-100 text-primary-100':
-              currentPath === link.to,
+            'border-b-2 border-primary-100 text-primary-100': path === link.to,
           }"
         >
           <p>{{ link.name }}</p>
@@ -46,12 +45,13 @@ const handleLocaleChange = () => {
   }
 };
 
+const route = useRoute();
+const path = computed(() => route.path);
+
 const links = [
   {
     name: "Gallery",
     to: "/gallery",
   },
 ];
-
-const currentPath = useRoute().path;
 </script>

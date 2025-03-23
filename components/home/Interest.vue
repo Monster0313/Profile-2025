@@ -5,7 +5,9 @@
         {{ t("interest.title") }}
       </h1>
     </div>
-    <div class="w-full flex justify-center items-stretch gap-8">
+    <div
+      class="w-full flex flex-col md:flex-row justify-center items-center md:items-stretch gap-8"
+    >
       <div class="w-full max-w-72 min-h-32 bg-primary-700 rounded-lg text-lg">
         <div class="p-4">
           <h2

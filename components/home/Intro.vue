@@ -1,14 +1,22 @@
 <template>
-  <div class="p-5 pb-80 rounded-lg text-primary-50">
+  <div class="p-5 pb-20 lg:pb-80 rounded-lg text-primary-50">
     <div class="text-center">
       <h1 class="text-primary-200 text-4xl pb-4 font-semibold">
         {{ t("about.title") }}
       </h1>
     </div>
-    <div class="mt-5 text-lg flex justify-center items-center gap-16">
-      <div class="relative shrink-0">
+    <div
+      class="mt-5 text-lg flex flex-col lg:flex-row lg:justify-center items-center gap-16"
+    >
+      <div
+        class="order-2 lg:order-1 relative flex flex-col items-center lg:block shrink-0"
+      >
         <div class="flip-profile w-72 h-72">
-          <div class="flip-profile-inner relative w-full h-full">
+          <div
+            @click="handleClickProfile"
+            class="flip-profile-inner relative w-full h-full"
+            :class="{ 'rotate-y-180': profileFlip }"
+          >
             <div class="flip-profile-front w-full h-full">
               <img
                 src="/assets/image/Profile.jpg"
@@ -27,13 +35,13 @@
             </div>
           </div>
         </div>
-        <div class="relative">
+        <div class="relative mt-8 lg:mt-0">
           <img
             src="/assets/image/arrow.svg"
-            class="absolute left-20 scale-y-[-1] rotate-[30deg] translate-y-7"
+            class="hidden lg:block absolute left-20 scale-y-[-1] rotate-[30deg] translate-y-7"
           />
           <div
-            class="absolute left-60 top-8 min-w-[560px] bg-primary-700 p-4 rounded-lg text-primary-50 flex flex-col gap-2.5"
+            class="lg:absolute lg:left-60 lg:top-8 min-w-[320px] lg:min-w-[560px] bg-primary-700 p-4 rounded-lg text-primary-50 flex flex-col gap-2.5"
           >
             <p v-for="line in tm('about.intro')">
               {{ rt(line) }}
@@ -41,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col items-start gap-3">
+      <div class="order-1 lg:order-2 flex flex-col items-start gap-3">
         <p class="text-2xl font-bold">{{ t("about.name") }}</p>
         <p>Frontend Developer / Freelance Photographer</p>
         <NuxtLink
@@ -65,6 +73,12 @@
 
 <script setup lang="ts">
 const { t, tm, rt } = useI18n();
+
+const profileFlip = ref(false);
+
+const handleClickProfile = ref(() => {
+  profileFlip.value = !profileFlip.value;
+});
 </script>
 
 <style>

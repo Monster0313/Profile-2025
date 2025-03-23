@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10 mb-16">
+  <div class="mt-20 md:mt-10 mb-20">
     <div class="flex flex-col justify-center items-center">
       <p class="text-center text-4xl font-semibold text-primary-200">
         {{ t("gallery.title") }}
@@ -10,7 +10,7 @@
           若您為照片中的角色可以自行取用，取用範圍僅限於個人用途，不可用於商業用途。
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-4 mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
         <NuxtLink
           v-for="(image, index) in gallery"
           :key="index"
@@ -28,12 +28,17 @@
           </div>
         </NuxtLink>
       </div>
+      <div class="w-96 mt-5 ml-10 flex flex-col items-center">
+        <img :src="Profile" width="384" class="w-full" />
+        <span class="-ml-10 text-primary-50">Artist：@キツネゆう</span>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { getGallery } from "~/assets/js/gallery";
+import Profile from "~/assets/image/gallery-profile.png";
 
 const { t } = useI18n();
 
