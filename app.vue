@@ -1,15 +1,10 @@
 <template>
-  <div class="relative min-h-[100vh] bg-primary-900 p-5 md:p-20">
-    <Navbar />
+  <NuxtLayout>
     <NuxtPage />
-    <Footer />
-  </div>
+  </NuxtLayout>
 </template>
 
 <script setup>
-import Navbar from "./components/navbar/Navbar.vue";
-import Footer from "./components/footer/Footer.vue";
-
 useSeoMeta({
   title: "小怪｜個人網站",
   ogTitle: "小怪｜個人網站",
